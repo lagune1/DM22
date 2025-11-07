@@ -1,0 +1,282 @@
+/* style pour tout les pages */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: #000000;
+  color: white;
+  padding: 20px 0;
+  position: relative;
+}
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: 800 ;
+}
+.passions { 
+  display: flex; 
+  gap: 16px; 
+  align-items: stretch;
+  justify-content: center;
+  padding: 20px;  
+}
+
+.carte {
+  display: block;
+  width: 320px; /* largeur fixe des cartes */
+  text-align: center;
+  border: 3px solid #000000;
+  border-radius: 5px;
+}
+
+.carte img {
+  display: block;
+  width: 320px;  /* même largeur pour toutes les images */
+  height: 300px;   /* même hauteur pour toutes les images */
+  object-fit: cover; /* conserve le cadrage sans déformer */
+  
+}
+
+.carte:hover {
+  opacity: 0.8;
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+.galerie {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.galerie img {
+  width: 300px;
+  border-radius: 10px;
+}
+
+.retour {
+  display: inline-block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #15803d; /* vert forêt */
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.retour:hover {
+  background-color: #14532d;
+}
+ul {
+  list-style-type: square;
+  padding-left: 20px;
+  text-align: left;
+  display: inline-block;
+  
+}
+li {
+  margin-bottom: 8px;
+}
+nav a:hover {
+  color: #7e7e7e;
+  transition: 0.3s;
+}
+.img1 {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.img2 {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.img3 {
+  width: auto;
+  height: auto;
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.img4 {
+  width: auto;
+  height: auto;
+  border-radius: 50%;
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.img1:hover, .img2:hover, .img3:hover, .img4:hover {
+  transition: 0.3s;
+  transform: scale(1.1) translateY(-50%);
+  
+}
+
+/* style page acceuil */
+body.home {
+  background: linear-gradient(180deg, #87ceeb 0%, #f0e68c 100%);
+  background-attachment: fixed;
+}
+p.home{
+  line-height: 1.6;
+  font-size: 18px;
+}
+
+footer.home {
+  text-align: center;
+  padding: 10px;
+  background-color: #000000;
+  color: #ffffff;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Styles pour la page chasse */
+body.chasse {
+  background: linear-gradient(180deg, #20321a 0%, #486029 45%, #8a5f2e 100%);
+  color: #ffffff;
+  background-attachment: fixed;
+}
+header.chasse {
+  position: relative;
+}
+
+h2.chasse, h3.chasse {
+  color: #ff6600;
+}
+h1.chasse{
+  color: #ff6600;
+
+}
+footer.chasse{
+  background-color: #000000;
+  color: #ff6600;
+  padding: 10px 0;
+  width: 100%;
+  bottom: 0;
+}
+/* style page cyclisme */
+body.cyclisme {
+  background: linear-gradient(180deg, #1e3a8a 0%, #3b82f6 45%, #93c5fd 100%);
+  color: #ffffff;
+  background-attachment: fixed;
+}
+footer.cyclisme{
+  background-color: #000000;
+  color: #00ff66;
+  padding: 10px 0;
+  width: 100%;
+  bottom: 0;
+}
+h1.cyclisme{
+  color: #00ff66;
+}
+h2.cyclisme, h3.cyclisme {
+  color: #00ff66;
+}
+header.cyclisme {
+  position: relative;
+}
+/* style page sport auto */
+body.sport-auto {
+  background: linear-gradient(180deg, #4b5563 0%, #9ca3af 45%, #d1d5db 100%);
+  color: #000000;
+  background-attachment: fixed;
+}
+footer.sport-auto{
+  background-color: #000000;
+  color: #ff0066;
+  padding: 10px 0;
+  width: 100%;
+  bottom: 0;
+}
+h1.sport-auto{
+  color: #ff0066;
+}
+h2.sport-auto, h3.sport-auto {
+  color: #ff0066;
+}
+header.sport-auto {
+  position: relative;
+}
+
+/* style page contact */
+body.contact {
+  background: linear-gradient(180deg, #6b21a8 0%, #a78bfa 45%, #ede9fe 100%);
+  color: #000000;
+  background-attachment: fixed;
+}
+footer.contact{
+  background-color: #000000;
+  position: fixed;
+  color: #ff66ff;
+  padding: 10px 0;
+  width: 100%;
+  bottom: 0;
+}
+h1.contact{
+  color: #ff66ff;
+}
+h2.contact, h3.contact {
+  color: #ff66ff;
+}
+header.contact {
+  position: relative;
+}
+section.formulaire-contact {
+  margin: 20px auto;
+  padding: 20px;
+  border: 2px solid #000000;
+  border-radius: 10px;
+  width: 300px;
+  background-color: #ffffff;
+}
+/* style pour le page videorallye */
+body.videorallye {
+  background: linear-gradient(180deg, #6b21a8 0%, #a78bfa 45%, #ede9fe 100%);
+  color: #000000;
+  background-attachment: fixed;
+}
+footer.contact{
+  background-color: #000000;
+  position: fixed;
+  color: #ff66ff;
+  padding: 10px 0;
+  width: 100%;
+  bottom: 0;
+}
+h1.contact{
+  color: #ff66ff;
+}
+h2.contact, h3.contact {
+  color: #ff66ff;
+}
+header.contact {
+  position: relative;
+}
+section.formulaire-contact {
+  margin: 20px auto;
+  padding: 20px;
+  border: 2px solid #000000;
+  border-radius: 10px;
+  width: 300px;
+  background-color: #ffffff;
+}
