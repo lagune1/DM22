@@ -251,32 +251,40 @@ section.formulaire-contact {
 }
 /* style pour le page videorallye */
 body.videorallye {
-  background: linear-gradient(180deg, #6b21a8 0%, #a78bfa 45%, #ede9fe 100%);
-  color: #000000;
+  background: linear-gradient(180deg, #1f2937 0%, #374151 45%, #9ca3af 100%);
+  color: #ffffff;
   background-attachment: fixed;
 }
-footer.contact{
+header.videorallye {
+  position: relative;
+}
+h1.videorallye{
+  color: #ffcc00;
+}
+h2.videorallye, h3.videorallye {
+  color: #ffcc00;
+}
+footer.videorallye{
   background-color: #000000;
-  position: fixed;
-  color: #ff66ff;
+  color: #ffcc00;
   padding: 10px 0;
   width: 100%;
   bottom: 0;
 }
-h1.contact{
-  color: #ff66ff;
-}
-h2.contact, h3.contact {
-  color: #ff66ff;
-}
-header.contact {
-  position: relative;
-}
-section.formulaire-contact {
+table.videorallye {
+  width: 80%;
   margin: 20px auto;
-  padding: 20px;
-  border: 2px solid #000000;
-  border-radius: 10px;
-  width: 300px;
-  background-color: #ffffff;
+  border-collapse: collapse;
 }
+td.videorallye, th.videorallye {
+  border: 1px solid #ffffff;
+  padding: 10px;
+}
+tr.videorallye:nth-child(even) {
+  background-color: #4b5563;
+}
+tr.videorallye:nth-child(odd) {
+  background-color: #6b7280;
+}
+
+
