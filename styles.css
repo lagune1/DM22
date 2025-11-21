@@ -250,7 +250,7 @@ section.formulaire-contact {
   width: 300px;
   background-color: #ffffff;
 }
-/* style pour le page videorallye */
+/* style page videorallye */
 body.videorallye {
   background: linear-gradient(180deg, #1f2937 0%, #374151 45%, #9ca3af 100%);
   color: #ffffff;
@@ -266,24 +266,39 @@ h2.videorallye, h3.videorallye {
   color: #ffcc00;
 }
 footer.videorallye{
+  position: relative;
   background-color: #000000;
   color: #ffcc00;
   padding: 10px 0;
   width: 100%;
   bottom: 0;
 }
-table.videorallye {
+table {
   width: 80%;
   margin: 20px auto;
   border-collapse: collapse;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
 }
-td.videorallye, th.videorallye {
-  border: 1px solid #ffffff;
-  padding: 10px;
+th {
+  background-color: #ffbf00;
+  color: #ffffff;
+  padding: 12px;
+  text-align: left;
 }
-tr.videorallye:nth-child(even) {
-  background-color: #4b5563;
+th:hover {
+  background-color: #e6ac00;
 }
-tr.videorallye:nth-child(odd) {
-  background-color: #6b7280;
+tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+tr:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+td {
+  color: #ffbf00; /* Assure la lisibilité des titres */
+  font-size: medium;
+  text-shadow: 1px 2px 8px rgb(90, 0, 0);
 }
